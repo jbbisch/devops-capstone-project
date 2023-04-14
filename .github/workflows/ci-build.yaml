@@ -44,3 +44,7 @@ jobs:
         run: nosetests
         env:
           DATABASE_URI: "postgresql://postgres:pgs3cr3t@postgres:5432/testdb"
+          
+      - name: Codecov
+        uses: codecov/codecov-action@v3.1.2
+
